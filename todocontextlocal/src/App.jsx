@@ -50,6 +50,7 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
+      <h1 className="text-3xl mb-5">Manage Your Todos</h1>
       <TodoForm />
       {todos.map((todo) => (
         <div key={todo.id}>
